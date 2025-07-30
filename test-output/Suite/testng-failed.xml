@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.max.tests.Tests">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDownTest"/>
+          <include name="tearDownExtent"/>
+          <include name="setupReport"/>
+          <include name="login"/>
+          <include name="checkoutWithGpay"/>
+        </methods>
+      </class> <!-- com.max.tests.Tests -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
